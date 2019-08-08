@@ -601,7 +601,7 @@ Amidst all my test results, something stood out though: weird things happen when
 
 [![diff][img11]][img11]
 
-It's the first like that's off here. APRR would dictate that the permissions should be none, yet EL1 can read and write. It appears that, if all of the following are true:
+It's the first line that's off here. APRR would dictate that the permissions should be none, yet EL1 can read and write. It appears that, if all of the following are true:
 
 - PAN is enabled
 - WXN is enabled
