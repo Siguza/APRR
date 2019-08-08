@@ -381,7 +381,7 @@ Not bad, this tells us quite a bit. For one, it seems that `pmap_page_protect` d
 ```
 
 Lo and behold, there are those two system registers we just said we hadn't seen yet! (Thought actually I lied - we've seen them already in `__LAST.__pinst`, that's just a bit moot since we have zero context there.)  
-What you're looking at is part of the `pmap_page_protect_internal` function (a part which is yet again not in public sources, obviously) that has been inlined into `pmap_page_protect`, with `x26` being a TTE about to be intered into a page table.
+What you're looking at is part of the `pmap_page_protect_internal` function (a part which is yet again not in public sources, obviously) that has been inlined into `pmap_page_protect`, with `x26` being a TTE about to be entered into a page table.
 
 So what's happening here? At the top we have the register reads, then we have some bit mashing, and finally a few branches to `panic()` if the resulting values are not zero. And it's the bit mashing we're interested in. Translated to C code it would probably look really ugly, but put into words, there are three simple actions:
 
