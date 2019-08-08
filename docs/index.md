@@ -535,7 +535,7 @@ Now there is _a lot_ of irony in this:
 
 - There isn't even a reason to put `__PPLDATA_CONST` under APRR! What are you gonna do, make it _more_ readonly than it already is?
 - This is the _peak_ of mitigation madness. We literally have one mitigation breaking another.
-- Apple hardware team appear to be really competent, ehh but the software team...
+- Apple hardware team appears to be really competent, ehh but the software team...
 
 And this isn't even the end of the story, but I'll leave the rest as an exercise to the reader.
 
