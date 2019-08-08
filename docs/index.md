@@ -6,7 +6,7 @@ Of Apple hardware secrets.
 
 ### Introduction
 
-Almost a year ago I've done a [write-up on KTRR](https://siguza.github.io/KTRR/), first introduced in Apple's A10 chip series. Now over the course of the last year, there has been a good bit of talk as well as confusion about the new mitigations shipped with Apple's A12. One big change, PAC, has already been [torn down in detail](https://googleprojectzero.blogspot.com/2019/02/examining-pointer-authentication-on.html) by [Brandon Azad](https://twitter.com/_bazad/), so I'm gonna leave that out here. What's left to cover is more than just APRR, but APRR is certainly the biggest chunk, hence the title of this post. Now the people who have attended TyphoonCon down in Seoul this year already got to see this research at an earlier stage - everyone else can get the slides [here](https://github.com/ssd-secure-disclosure/typhooncon2019/blob/master/Siguza%20-%20Mitigations.pdf). On a separet note, Apple's Head of Security Engineering [Ivan Krstić](https://twitter.com/radian/) returns to BlackHat US this year with a talk titled "[Behind the scenes of iOS and Mac Security](https://www.blackhat.com/us-19/briefings/schedule/index.html#behind-the-scenes-of-ios-and-mac-security-17220)". The bits about iOS 13 sure sound interesting, but this bit of the abstract caught my eye:
+Almost a year ago I did done a [write-up on KTRR](https://siguza.github.io/KTRR/), first introduced in Apple's A10 chip series. Now over the course of the last year, there has been a good bit of talk as well as confusion about the new mitigations shipped with Apple's A12. One big change, PAC, has already been [torn down in detail](https://googleprojectzero.blogspot.com/2019/02/examining-pointer-authentication-on.html) by [Brandon Azad](https://twitter.com/_bazad/), so I'm gonna leave that out here. What's left to cover is more than just APRR, but APRR is certainly the biggest chunk, hence the title of this post. Now the people who have attended TyphoonCon down in Seoul this year already got to see this research at an earlier stage - everyone else can get the slides [here](https://github.com/ssd-secure-disclosure/typhooncon2019/blob/master/Siguza%20-%20Mitigations.pdf). On a separet note, Apple's Head of Security Engineering [Ivan Krstić](https://twitter.com/radian/) returns to BlackHat US this year with a talk titled "[Behind the scenes of iOS and Mac Security](https://www.blackhat.com/us-19/briefings/schedule/index.html#behind-the-scenes-of-ios-and-mac-security-17220)". The bits about iOS 13 sure sound interesting, but this bit of the abstract caught my eye:
 
 > We will also discuss previously-undisclosed VM permission and page protection technologies that are part of our overall iOS code integrity architecture.
 
@@ -626,9 +626,9 @@ It's also evident that Apple is really fond of post-exploit mitigations, or just
 But at last, we might have gathered enough information to make an educated guess as to what the acronym "APRR" actually stands for. My best guess is "Access Protection ReRouting".  
 I hear when Project Zero tries to guess the meaning behind acronyms though, all Apple engineers have to offer is a smug grin, so maybe it's also just "APple Rick Rolling".
 
-For typos, feedback, content questions etc, feel free to [open a ticket](https://github.com/Siguza/APRR/issues) or [ping me on Twitter](https://twitter.com/s1guza).
+For typos, feedback, content questions etc, feel free to [open a ticket](https://github.com/Siguza/APRR/issues), [ping me on Twitter](https://twitter.com/s1guza) or email me (`*@*.net` where `*` = `siguza`).
 
-Till next time, peace out.
+Till next time, peace out. ;)
 
 ### Thanks to
 
