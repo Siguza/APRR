@@ -621,8 +621,6 @@ APRR is a pretty cool feature, even if parts of it are kinda broke. What I reall
 
 It's also evident that Apple is really fond of post-exploit mitigations, or just mitigations in general. And on one hand, getting control over the physical address space is a good bit harder now. But on the other hand, Apple's stacking of mitigations is taking a problematic turn when adding new mitigations actively creates vulnerabilities now.
 
- But as shown, mitigations have gotten to the point where they can easily tear each other down, especially if the left hand doesn't know what the right hand is doing.
-
 But at last, we might have gathered enough information to make an educated guess as to what the acronym "APRR" actually stands for. My best guess is "Access Protection ReRouting".  
 I hear when Project Zero tries to guess the meaning behind acronyms though, all Apple engineers have to offer is a smug grin, so maybe it's also just "APple Rick Rolling".
 
