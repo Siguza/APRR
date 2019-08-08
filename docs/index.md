@@ -504,13 +504,13 @@ Here's how it would work in a standard ARMv8.\* implementation:
 
 [![TTE bits][img9]][img9]
 
-And here's how it works on chips with APRR:
+And here's how it works on chips with APRR (the orange boxes are register numbers):
 
 [![APRR TTE bits][img10]][img10]
 
 Two notes on these:
 
-- These still isn't the whole picture - there will be more detail further down this post, but that's not gonna fit into a nice graph anymore.
+- This still isn't the whole picture - there will be more detail further down this post, but that's not gonna fit into a nice graph anymore.
 - If you're confused by the bits coming in from the top right, those are the "Hierarchical Permission Disable" bits (HPD). Basically a page table can already have bits set that say it can never map anything as writeable or so, and then the write bit is stripped out of any entry mapped under it.
 
 ### Mitigations gone rogue
@@ -625,6 +625,8 @@ It's also evident that Apple is really fond of post-exploit mitigations, or just
 
 But at last, we might have gathered enough information to make an educated guess as to what the acronym "APRR" actually stands for. My best guess is "Access Protection ReRouting".  
 I hear when Project Zero tries to guess the meaning behind acronyms though, all Apple engineers have to offer is a smug grin, so maybe it's also just "APple Rick Rolling".
+
+For typos, feedback, content questions etc, feel free to [open a ticket](https://github.com/Siguza/APRR/issues) or [ping me on Twitter](https://twitter.com/s1guza).
 
 Till next time, peace out.
 
