@@ -169,7 +169,7 @@ LC 05: LC_SEGMENT_64  Mem: 0xfffffff008ed8000-0xfffffff008edc000  __PPLDATA_CONS
 LC 07: LC_SEGMENT_64  Mem: 0xfffffff008ee0000-0xfffffff008ee4000  __PPLDATA
 ```
 
-Of course Apple won't tell us what the acronym "PPL" stands for (anyone at Blackhat willing to annoy Ivan over this? :P), but that doesn't stop us from taking it apart.
+Of course Apple won't tell us what the acronym "PPL" stands for (~anyone at Blackhat willing to annoy Ivan over this? :P~ UPDATE: it stands for "Page Protection Layer"!), but that doesn't stop us from taking it apart.
 
 Anyone doing post-exploitation on A12 will have undoubtedly come across PPL already. Because a bunch of memory patches that used to work just fine on A11 and earlier (namely trust cache injection and page table patches) make the A12 kernel panic with a kernel data abort (i.e. insufficient memory permissions). The thing is though, the kernel can definitely still write to that memory _somehow_ - and if you try and track down the code that does so, you'll find that all such accesses happen from inside `__PPLTEXT`. It would appear as though that code was "privileged" somehow - but of course you can't just invoke it, since that will _also_ panic, this time with an instruction fetch abort. Of course you can then go track down the code that calls into `__PPLTEXT`, which will reveal that all such invocations go through `__PPLTRAMP`.
 
