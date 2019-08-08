@@ -529,7 +529,7 @@ Now there is _a lot_ of irony in this:
 - This is a vulnerability so fundamental that it is trivial to exploit, takes virtually no time, and is reachable from even the most heavily sandboxed contexts.
 - It affects _nothing but_ the latest chip generation. A11 and earlier are safe, it only exists on A12/A12X. Or, to quote [Ian Beer](https://twitter.com/i41nbeer) on the matter:
 
-  > So what can you do to protect yourself\?  
+  > So what can you do to protect yourself?  
   > Use an older device\!  
   > _\[is Britishly outraged\]_
 
