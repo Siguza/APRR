@@ -290,7 +290,7 @@ That was nice and well, but just a year later with the release of the A11, Apple
 0x188347328      200020d4       brk 1
 ```
 
-So the system register in question is `s3_4_c15_c2_7`, and it gets its values from the hardcoded addresses `0xfffffc110/8` - which are on the "commpage", outside the range in which userland code is allowed to map memory. Those values are set up by the kernel in `commpage_populate`, but obviously the parts we care about are once again not in public XNU sources. You can find it in assembly though by looking for xrefs to the string `"commpage cpus==0"`, and then far down the funcation referencing that you'll see something like this:
+So the system register in question is `s3_4_c15_c2_7`, and it gets its values from the hardcoded addresses `0xfffffc110/8` - which are on the "commpage", outside the range in which userland code is allowed to map memory. Those values are set up by the kernel in `commpage_populate`, but obviously the parts we care about are once again not in public XNU sources. You can find it in assembly though by looking for xrefs to the string `"commpage cpus==0"`, and then far down the function referencing that you'll see something like this:
 
 ```
 0xfffffff007b85390      caee8ed2       mov x10, 0x7776
