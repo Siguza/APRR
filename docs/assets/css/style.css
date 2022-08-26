@@ -20,7 +20,9 @@
 }
 
 /* Custom navbar */
-nav{font-size:1.2em;font-weight:600;text-align:center;padding:10px 0}
+.markdown-body{margin-top:0 !important}
+main{margin-top: 15px}
+nav{font-size:16.8px;font-weight:600;text-align:center;padding:10px 0}
 .separator{border-bottom:solid 1px #888}
 @media (min-resolution: 2dppx){
     .separator{border-bottom-width: 0.5px}
