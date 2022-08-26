@@ -18,3 +18,10 @@
     .text-gray{color:#969ea7 !important}
     .border-top{border-top:1px #666 solid !important}
 }
+
+/* Custom navbar */
+nav{font-size:1.2em;font-weight:600;text-align:center;padding:10px 0}
+.separator{border-bottom:solid 1px #888}
+@media (min-resolution: 2dppx){
+    .separator{border-bottom-width: 0.5px}
+}
