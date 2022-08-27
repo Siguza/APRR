@@ -1,3 +1,3 @@
 # Write-up
 
-This is best viewed at [siguza.github.io/APRR](https://siguza.github.io/APRR/), where the images are properly working.
+This is best viewed at [blog.siguza.net/APRR](https://blog.siguza.net/APRR/), where the images are properly working.
