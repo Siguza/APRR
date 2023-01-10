@@ -624,7 +624,7 @@ It's also evident that Apple is really fond of post-exploit mitigations, or just
 But at last, we might have gathered enough information to make an educated guess as to what the acronym "APRR" actually stands for. My best guess is "Access Protection ReRouting".  
 I hear when Project Zero tries to guess the meaning behind acronyms though, all Apple engineers have to offer is a smug grin, so maybe it's also just "APple Rick Rolling".
 
-For typos, feedback, content questions etc, feel free to [open a ticket](https://github.com/Siguza/APRR/issues), [ping me on Twitter](https://twitter.com/s1guza) or email me (`*@*.net` where `*` = `siguza`).
+For typos, feedback, content questions etc, feel free to [open a ticket](https://github.com/Siguza/APRR/issues), ping me on ~~Twitter~~ [Mastodon](https://mastodon.social/@siguza) or email me (`*@*.net` where `*` = `siguza`).
 
 Till next time, peace out. ;)
 
